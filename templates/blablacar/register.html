@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Поездки с попутчиками по самым низким ценам | BlaBlaCar{% endblock %}
+
+{% block content %}
+
+  {% include 'blablacar/includes/navbar.html' %}
+<h2>Регистрация</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Зарегистрироваться</button>
+</form>
+<p>Уже есть аккаунт? <a href="{% url 'login-page' %}">Войти</a></p>
+  {% endblock %}

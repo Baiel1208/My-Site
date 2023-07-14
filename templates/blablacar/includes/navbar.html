@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'index-page' %}">BlaBlaCar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'index-page' %}">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'poputchik-page' %}">С попутчиками</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'bus-page' %}">На автобусе</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="{% url 'search-car-page' %}">🔍 Искать</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="{% url 'offer-seats-page' %}">Опубликовать поездку</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            icon
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Вход</a></li>
+            <li><a class="dropdown-item" href="{% url 'register-page' %}">Регистрация</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+<!--    <li>-->
+<!--      <form class="search-form">-->
+<!--        <input type="text" placeholder="Поиск">-->
+<!--        <a href="#"><button type="submit">Найти</button></a>-->
+<!--      </form>-->
+<!--    </li>-->
+  </ul>
+    </div>
+  </div>
+</nav>

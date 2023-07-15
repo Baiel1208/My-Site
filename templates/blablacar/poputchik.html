@@ -6,4 +6,13 @@
 
   {% include 'blablacar/includes/navbar.html' %}
 <h1>Поездки с попутчиками в тысячи населенных пунктов по самым низким ценам</h1>
+
+  <form class="search-form">
+    <input type="text" class="search-input" placeholder="Откуда">
+    <input type="text" class="search-input" placeholder="Куда">
+    <input type="date" class="search-input">
+    <input type="number" class="search-input" min="1" max="8" placeholder="Люди">
+    <button type="submit" class="search-button">Найти</button>
+  </form>
+
   {% endblock %}

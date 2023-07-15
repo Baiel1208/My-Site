@@ -6,4 +6,12 @@
 
   {% include 'blablacar/includes/navbar.html' %}
 <h1>Станьте водителем BlaBlaCar — берите попутчиков и экономьте на бензине</h1>
+
+  <form class="search-form">
+    <input type="text" class="search-input" placeholder="Откуда"> <br>
+    <input type="text" class="search-input" placeholder="Куда"><br>
+    <input type="date" class="search-input"><br>
+    <input type="number" class="search-input" min="1" max="8" placeholder="Люди">
+    <button type="submit" class="search-button">Опубликовать поездку</button>
+  </form>
   {% endblock %}

@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from django.views import generic
 
 
 def index(request):
     return render(request, 'blablacar/index.html')
+
 
 def poputchik(request):
     return render(request, 'blablacar/poputchik.html')

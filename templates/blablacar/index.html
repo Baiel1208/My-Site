@@ -2,8 +2,36 @@
 
 {% block title %}Главная страница | BlaBlaCar{% endblock %}
 
+<style>
+    .search-form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .search-input {
+      margin-right: 10px;
+    }
+
+    .search-button {
+      padding: 5px 10px;
+    }
+  </style>
+
 {% block content %}
 
   {% include 'blablacar/includes/navbar.html' %}
 <h1>Главная страница</h1>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The form -->
+  <form class="search-form">
+    <input type="text" class="search-input" placeholder="Откуда">
+    <input type="text" class="search-input" placeholder="Куда">
+    <input type="date" class="search-input">
+    <input type="number" class="search-input" min="1" max="8" placeholder="Люди">
+    <button type="submit" class="search-button">Найти</button>
+  </form>
+
   {% endblock %}

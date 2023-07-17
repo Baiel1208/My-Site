@@ -6,7 +6,10 @@
 
   {% include 'blablacar/includes/navbar.html' %}
 <h1>Станьте водителем BlaBlaCar — берите попутчиков и экономьте на бензине</h1>
-
+ <form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Создать запись</button>
   <form class="search-form">
     <input type="text" class="search-input" placeholder="Откуда"> <br>
     <input type="text" class="search-input" placeholder="Куда"><br>

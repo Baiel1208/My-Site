@@ -7,9 +7,9 @@ class Address(models.Model):
     city = models.CharField(max_length=100)
 
 class Trip(models.Model):
-    start_address = models.ForeignKey(Address, on_delete=models.CASCADE, related_name='trips_from')
-    end_address = models.ForeignKey(Address, on_delete=models.CASCADE, related_name='trips_to')
-    date = models.DateField()
+    start_address = models.ForeignKey(Address, on_delete=models.CASCADE, related_name='trips_from', verbose_name="Откуда")
+    end_address = models.ForeignKey(Address, on_delete=models.CASCADE, related_name='trips_to', verbose_name="Куда")
+    # created = models.DateField(auto_now=True, verbose_name="Дата публикации")
     seats_available = models.IntegerField()
     driver = models.ForeignKey(User, on_delete=models.CASCADE, related_name='trips')
 
